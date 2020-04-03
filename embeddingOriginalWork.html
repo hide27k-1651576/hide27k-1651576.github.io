@@ -6,10 +6,38 @@
     <title>Embedding Master</title>
 </head>
 <body>
+    <h1>Embedding Master</h1>
+    <h2>Youtube</h2>
+    <p>There are couple of ways to decorate your embedded Youtube video</p>
+    <ul>
+        <li>By using <b>autoplay=1</b>, we can use the autoplay function for embedded Youtube vido. Don't forget adding <b>mute=1</b> since Chrome browser will block playing the video.</li>
+        <li>By setting up <b>start=seconds</b>, we can play the embedded youtube video from certain time. I set <b>start=180</b>, so the Youtube video below starts at minute 3.</li>
+        <li><b>c_load_policy=1</b> allows embedded Youtube video to have cc.</li>
+        <li><b>modestbranding=1</b> remove the Youtube icon from your embedded Youtube video.</li>
+    </ul>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/bjYhmX_OUQQ?autoplay=1&mute=1&start=180&cc_load_policy=1&modestbranding=1" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <script
-        src="//rss.bloople.net/?url=https%3A%2F%2Fwww.reddit.com%2Fr%2FSlackers%2F.rss&showtitle=false&type=js"></script>
+    <h2>Video and Audio</h2>
+    <p>We can add video and aution by using the HTML5 <b>video</b> and <b>audio</b> tags.</p>
+    <p>If the browser doesn't support the certain file type, it says, "Your browser does not support HTML5 video/audio.".</p>
+    <h3>Video</h3>
+    <video width="560" controls>
+        <source src="./images/mov_hts-samp008.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="./images/ship.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <h2>Pdf file</h2>
+    <p>By using <b>object</b> tag, we can show pdf, too. This is very cool.</p>
+    <object type="application/pdf" data="./files/understanding-machine-learning-theory-algorithms.pdf" width="500" height="500"></object>
+    <h2>RSS feed</h2>
+    <p>By using <b>RSS url</b>, we can RSS feed, too.</p>
+    <iframe width="560" height="315"
+        src="http://us1.rssfeedwidget.com/getrss.php?time=1585890818773&amp;x=http%3A%2F%2Frss.news.yahoo.com%2Frss%2Ftopstories&amp;w=500&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=transparent&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12"
+        >Reading RSS Feed...</iframe>
 
 </body>
 </html>
